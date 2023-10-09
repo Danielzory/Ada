@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        div{
+            background-color: aquamarine;
+            border: solid 1px aquamarine;
+            width: 400px;
+            height: 100px;
+            margin: auto;
+            margin-top: 30px;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.734);
+        }
+        input{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        label, p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>IMC</h1>
+    <h2>Autor: Daniel Batista</h2>
+    <hr>
+
+    <div id="imc">
+        <legend>
+            <label for="nome"">Nome</label>
+            <input id="nome" autofocus type="text">
+            <br><br>
+            <label" for="altura">Altura</label>
+            <input id="altura" placeholder="0.00"type="number">
+            <br><br>
+            <label" for="peso">Peso</label>
+            <input id="peso" type="number" placeholder="0.00">
+            <br><br>
+        </legend> 
+            <input type="button" value="Calcular" onclick="imcCalc()">
+    </div>
+    <div id="res">
+    <hr>
+        <p>Resultado</p>
+    <hr>
+    <script src="imc.js"></script>
+    </div>
+</body>
+</html>
