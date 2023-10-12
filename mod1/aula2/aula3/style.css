@@ -1,0 +1,36 @@
+form{
+    margin: 0 auto;
+    justify-content: center;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 5px 15px 0px 0px ;
+    background-color: rgba(64, 146, 119, 0.553);
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+}
+input{
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    outline: none;
+}
+input:invalid{
+    box-shadow: 0 0 5px 1px red;
+}
+input:focus{
+    box-shadow: 0 0 5px 1px gray;
+}  
+
+label{
+    width: 100px;
+    text-align: right;
+}

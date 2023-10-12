@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulários</h1>
+    </header>
+    <main>
+        <form action="/" method="post">
+            <fieldset>
+                <legend>Formulário Teste</legend>
+                <ul>
+                    <li>
+                        <label for="firstname">Nome:</label>
+                        <input type="text" id="firstname" name="firstname">
+                    </li>
+                    <li>
+                        <label for="age">Idade:</label>
+                        <input type="number" id="age" name="age" minlength="3" oninvalid="alert('Deve conter no mínimo três caracteres')">
+                    </li>
+                    <li>
+                        <label for="born">Ano de Nascimento:</label>
+                        <input type="date" id="born" name="born">
+                    </li>
+                    <li>
+                        <label for="secret">Senha:</label>
+                        <input type="password" maxlength="6" id="secret" name="secret">
+                    </li>
+                    <br>
+                    <li>
+                        <input type="submit" value="Enviar">
+                    </li>
+                    <li>
+                        <input type="reset">
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </main>
+    <script>
+        
+    </script>
+    
+</body>
+</html>

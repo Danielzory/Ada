@@ -1,0 +1,45 @@
+
+header{
+    display: flex;
+    background-color: aqua;
+    border: 1px solid rgba(41, 127, 127, 0.559);
+}
+nav > ul{
+    display: flex;
+    padding: 10px;
+    margin: auto;
+}
+a{
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+li{
+    list-style: none;
+    margin: auto;
+    padding: 10px;
+}
+li:hover{
+    background-color: beige;
+    border-radius: 8px;
+}
+a:hover{
+    color: rgb(189, 5, 5);
+}    
+h1{
+    margin: auto;
+    text-align: center;
+}
+table{
+    border: 1px solid black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+    color: rgba(131, 46, 210, 0.724);
+    text-align: center;
+    margin: auto;
+}
+td,th{
+    border: 1px solid black;
+    padding: 5px; 
+}
