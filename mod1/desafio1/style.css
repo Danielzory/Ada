@@ -1,0 +1,86 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa&family=Kanit&family=Orbitron:wght@600&family=Tilt+Neon&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('fundo.png');
+    background-position: top left;
+    font-family: 'Tilt Neon', sans-serif;;
+}
+main{
+    background-color: rgba(128, 128, 128, 0.541);
+    width: 60vw;
+    height: 80vw;
+    margin: 50px auto;
+    padding: 13px;
+    border-radius: 10px 5px;
+}
+
+h1{
+    text-transform: uppercase;
+    text-shadow: 0px 0px 5px black;
+    padding: 5px;
+}
+legend{
+    text-transform: uppercase;
+    text-shadow: 0px 0px 5px black;
+    padding: 2px;
+}
+li{
+    list-style: none;
+    padding: 10px;
+}
+input{
+    border-radius: 0.5em;
+    width: 100%;
+    height: 25px;
+    display: block;
+}
+
+input.check{
+    display: inline;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 400;
+}
+    
+.ligth:hover{
+    text-shadow: 0px 0px 5px rgb(112, 16, 16);
+    transition: 0.3s;
+}
+.formButton{
+    display: inline;
+    width: 55px;
+    height: 40px;
+    cursor: pointer;
+}
+.formButton:hover{
+    box-shadow: 1px 1px 8px rgb(94, 15, 178);
+    transition: 0.4s;
+}
+input:focus{
+    outline: none;
+    border-color: rgb(213, 157, 24);
+    box-shadow: 1px 1px 8px rgba(255, 0, 0, 0.677) ;
+    transition: 0.3s;
+
+}
+
+.res{
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: cell;
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+}
+.res:hover{
+    background-color: rgba(255, 255, 255, 0.638);
+    box-shadow: 0px 0px 5px rgba(73, 5, 55, 0.844);
+    width: 100%;
+}

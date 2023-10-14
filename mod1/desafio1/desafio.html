@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main>
+        <h1 class="ligth">Cadastre-se para jogar</h1>
+        <form id="form1" method="post">
+            <fieldset>
+                <legend class="ligth">Informações para cadastro</legend>
+                <ul>
+                    <li>
+                        <label for="name" class="ligth">Nome:</label>
+                        <input type="text" id="name" name="name">
+                    </li>
+                    <li>
+                        <label for="mail" class="ligth">E-mail:</label>
+                        <input type="email" id="mail" name="mail" minlength="3" oninvalid="alert('Deve conter no mínimo três caracteres')"required>
+                    </li>
+                    <li>
+                        <label for="borned" class="ligth">Ano de Nascimento:</label>
+                        <input type="date" id="borned" name="borned">
+                    </li>
+                    <li>
+                        <label for="secret" class="ligth">Senha:</label>
+                        <input type="password" maxlength="6" id="secret" name="secret" placeholder="Senha de 6 caracteres" required>
+                    </li>
+                
+                    <li>
+                        <input type="checkbox" id="check" name="check" class="check">
+                        <label for="check" class="ligth">Eu li e concordo com a <a href="/">Política de Privacidade</a>. A Zory's Game não coleta intencionalmente dados de crianças menores de 13 anos de idade.</label>
+        
+                    </li>
+                    <br>
+                    <li>
+                        <input class="formButton" type="submit" value="Enviar">
+                        <input class="formButton" type="reset" value="Apagar">
+                    </li>
+                  
+                </ul>
+            </fieldset>
+        </form>
+        <div id="retorno">
+            <h2>Requisição GET</h2>
+        </div>
+    </main>
+    <script src="desafio.js"></script>
+</body>
+</html>
