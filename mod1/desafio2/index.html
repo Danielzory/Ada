@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoLife</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header - Barra de navegação - Carrocel-->
+    <header id="home">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><h1 id="logo">MotoLife</h1></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#selectCl">Garagem</a>
+                    <a class="nav-link" href="#table">Preços</a>
+                    <a class="nav-link" href="#form">Cadastro</a>
+                    <a class="nav-link" href="#ctt">Contato</a>
+            
+                </div>
+              </div>
+            </div>
+          </nav>
+        <div>
+            <div id="carrocel">
+                <ul>
+                    <li><img src="./carrocel/carrocel1.png" alt="Moto na estrada ao pôr do Sol" class="carrocel"></li>
+                    <li><img src="./carrocel/carrocel2.png" alt="Acamapamento no deserto" class="carrocel"></li>
+                    <li><img src="./carrocel/carrocel3.png" alt="Mulher ao lado da moto" class="carrocel"></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="container center">
+            <button class="rentButton"><a href="#selectCl">Alugue agora!</a></button>
+        </div>
+    </header>
+     <!--Main - Descrição - Produtos - Cadastro - Tabela de preços-->
+    <main>
+        <section>
+            <div id="descripition" class="container center">
+                <div class="line">
+                    <div>
+                        <spam class="menu line">
+                            <h1>MotoLife</h1>
+                        </spam>
+                    </div>
+                    <section class="menu">
+                        <spam>
+                            <p>Aqui na <strong>MotoLife</strong> você pode alugar motos tanto para uso diário quanto para pegar a estrada no fim de semana.</p>
+                        </spam>
+                        <spam>
+                            <p>Para que se preocupar com IPVA, manutenção, seguro e etc? Queremos que você <strong>aproveite a viagem e deixe o resto com a gente!</strong></p>
+                        </spam>
+
+                    </section>
+                </div>
+            </div>
+
+           <!--Seleção de tipo de moto-->
+            
+           <div id="selectCl" class="container divAling">
+                
+                    <h3 class="gap-down">Vai de que, Motoca?</h3>
+                    <p class="gap-down">Selecione qual tipo de moto deseja alugar:</p>
+                <div class="center">    
+                    <ul id="btn-select">
+                        <l1 class="menu"><button class="btn btn-dark btn-md"><a href="#cl1"><strong>100cc a 450cc</strong><p>Classe 1</p></a></button></l1>
+                        <l1 class="menu"><button class="btn btn-dark btn-md"><a href="#cl2"><strong>500cc a 883cc</strong><p>Classe 2</p></a></button></l1>
+                        <l1 class="menu"><button class="btn btn-dark btn-md"><a href="#cl3
+                            "><strong>900cc a 1600cc</strong><p>Classe 3</p></a></button></l1>
+                    </ul>
+                </div>
+            </div>
+
+           <!--Classes das motos-->
+
+                <div id="cl1" class="line center cl container divAling">
+                    <h4>Classe 1</h4>
+                    <div class="menu ligth">
+                        <div><h3>Fan 160</h3></div>
+                            <div><img src="motos/fan.png" alt="Foto de uma motocicleta - Honda Fan 160" class="imgCat"></div>
+                            <div>
+                                <p><strong>Potência: </strong> 12cv</p>
+                                <p><strong>Autonomia: </strong> 400 Km</p>
+                            </div>
+                           
+                                               
+                    </div>
+                        <div class="menu ligth">
+                            <div><h3>Fazer 250</h3></div>
+                            <div><img src="motos/fazer.png" alt="Foto de uma motocicleta - Yamaha Fazer 250" class="imgCat"></div>
+                            <div>
+                                <p><strong>Potência: </strong> 22cv</p>
+                                <p><strong>Autonomia: </strong> 320 Km</p>
+                            </div>
+                            
+                        </div>
+                    <div class="menu ligth">
+                            <div><h3>Hymalayan</h3></div>
+                            <div><img src="motos/yma.png" alt="Foto de uma motocicleta - Royal Enfield Hymalayan " class="imgCat"></div>
+                            <div>
+                                <p><strong>Potência: </strong> 26cv</p>
+                                <p><strong>Autonomia: </strong> 300 Km</p>
+                            </div>
+                         
+                     </div>
+                        
+                </div>
+                <div id="cl2" class="line center cl container divAling">
+                    <h4>Classe 2</h4>
+                        <div class="menu ligth">
+                        
+                            <div><h3>CB 500x</h3></div>
+                            <div><img src="motos/500x.png" alt="Foto de uma motocicleta - Honda CB 500X" class="imgCatBig"></div>
+                            <div>
+                                <p><strong>Potência: </strong> 52cv</p>
+                                <p><strong>Autonomia: </strong> 300 Km</p>
+                            </div>
+                            
+                        </div>
+                        <div class="menu ligth">
+                            <div><h3>MT 07</h3></div>
+                            <div><img src="motos/mt07.png" alt="Foto de uma motocicleta - Yamaha MT 07" class="imgCat"></div>
+                            <div>
+                                <p><strong>Potência: </strong> 69cv</p>
+                                <p><strong>Autonomia: </strong> 280 Km</p>
+                            </div>
+                           
+                        </div>
+                        <div class="menu ligth">
+                            <div><h3>Iron 883</h3></div>
+                            <div><img src="motos/883.png" alt="Foto de uma motocicleta Iron 883" class="imgCat"></div>
+                            <div>
+                                <p><strong>Potência: </strong> 80cv</p>
+                                <p><strong>Autonomia: </strong>310 Km</p>
+                            </div>
+                        </div>    
+                     
+               </div>
+                <div id="cl3" class="line center cl container divAling">
+                    <h4>Classe 3</h4>
+                        <div class="menu ligth" ><div><h3>BMW GS 1200</h3></div>
+                        <div><img src="motos/gs.png" alt=" Foto de uma motocicleta - BMW GS 1200" class="imgCat"></div>
+                        <div>
+                            <p><strong>Potência: </strong> 80cv</p>
+                            <p><strong>Autonomia: </strong> 290 Km</p>
+                        </div>
+                      </div>
+                        <div class="menu ligth" >
+                            <div><h3>Dyna Fat Boy 1600</h3></div>
+                            <div><img src="motos/fatboy.png" alt="Foto de uma motocicleta - Dyna Fat Boy 1600" class="imgCatBig"></div>
+                            <div>
+                                <p><strong>Potência: </strong> 99cv</p>
+                                <p><strong>Autonomia: </strong> 310 Km</p>
+                            </div>
+                       
+                </div>
+                
+        </section>
+        
+        <!--Tabela de preços-->
+       
+        <section>
+            <div id="table" class="container center table-responsive">
+                <table class="table table-dark table-sm ">
+                    <thead class="table-light">
+                        <caption><h3>Preços</h3></caption>
+                        <tr>
+                            <th>Classe</th>
+                            <th>Moto</th>
+                            <th>Valor diária</th>
+                            <th>Valor Fim de semana</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Classe 1</td>
+                            <td>Fan 160</td>
+                            <td>R$ 60,00</td>
+                            <td>R$ 140,00</td>
+                        </tr>
+                        <tr>
+                            <td>Fazer 250</td>
+                            <td>R$ 80,00</td>
+                            <td>R$ 175,00</td>
+                        </tr>
+                        <tr>
+                            <td>Hymalayan 450</td>
+                            <td>R$ 100,00</td>
+                            <td>R$ 280,00</td>
+                        </tr>
+                       
+                        <tr>
+                            <td rowspan="3">Classe 2</td>
+                            <td>CB 500X</td>
+                            <td>R$ 140,00</td>
+                            <td>R$ 340,00</td>
+                        </tr>
+                        <tr>
+                            <td>MT 07</td>
+                            <td>R$ 160,00</td>
+                            <td>R$ 400,00</td>
+                        </tr>
+                        <tr>
+                            <td>Iron 883</td>
+                            <td>R$ 200,00</td>
+                            <td>R$ 550,00</td>
+                        </tr>
+                       
+                        <tr>
+                            <td rowspan="2">Classe 3</td>
+                            <td>BMW GS 1200 </td>
+                            <td>R$ 220,00</td>
+                            <td>R$ 600,00</td>
+                        </tr>
+                        <tr>
+                            <td>Dyna Fat Boy 1600</td>
+                            <td>R$ 280,00</td>
+                            <td>R$ 700,00</td>
+                        </tr>
+            
+            
+                    </tbody>
+                </table>
+            </div>
+            <div class="container center">
+                <div id="extra_itens">
+                    <div class="center">
+                        <h3>Itens Extras</h3>
+                    </div>
+                    <div class="line">
+                        <div>
+                            <div><h3>Capacete</h3></div>
+                            <div><img src="motos/capacete.png" alt="Foto de um capacete para pilotar motocicleta" class="imgCat"></div>
+                            <div><p><b>Valor diário:</b> R$ 30,00</p></div>
+                        </div>
+                        <div>
+                            <div><h3>Baú</h3></div>
+                            <div><img src="motos/bau.png" alt="Foto de um baú para motocicleta" class="imgCat"></div>
+                            <div><p><b>Valor diário:</b> R$ 35,00</p></div>
+                        </div>
+                        <div>
+                            <div><h3>Suporte GPS</h3></div>
+                            <div><img src="motos/sup.png" alt="Foto de um porte de GPS para motocicleta" class="imgCat"></div>
+                            <div><p><b>Valor diário:</b> R$ 15,00</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+                </div>
+        </section>
+
+        <!--Formulário de cadastro-->
+       
+        <section id="form">
+            <div class="container center">
+                <section>
+                    <form action="#">
+                        <li>
+                            <label for="name">Nome Completo</label>
+                            <input type="text" name="name" id="name" required>
+                        </li>
+                        <li>
+                            <label for="cpf">CPF</label>
+                            <input type="number" name="cpf" id="cpf" placeholder="000-000-000-00" minlength="14" maxlength="14" required>
+                        </li>
+                        <li>
+                            <label for="email">E-Mail</label>
+                            <input type="email" name="email" id="email" required>
+                        </li>
+                        <li>
+                            <label for="tel">Telefone</label>
+                            <input type="tel" name="tel" id="tel" required>
+                        </li>
+                        <li class="gap-down">
+                            <label for="exp">Quantos anos de experieência em pilotamgem de motos</label>
+                            <select name="select" id="exp" name="exp" required>
+                                <option value="exp1">1 a 2 Ano</option>
+                                <option value="exp2">3 a 5 anos</option>
+                                <option value="exp3">Mais de 5 anos</option>
+                              </select>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="check" name="check" class="check" required>
+                            <label for="check">
+                                Li e concordo com os termos do <a href="/">contrato de locação.</a></label>
+                        </li>
+                        <li>
+                            <p>*Após aprovação do seu cadastro, você receberá pelo e-mail, um código que o habilita para locar a moto desejada. Com esse código, entre em contato pelo nosso WhatsApp. Você também poderá acrescentar à sua locação, acessórios como capacetes, baú, suporte para GPS.</p>
+                            <div class="center justify-content-md-center gap-2">
+                                <button type="button" class="btn btn-dark btn-lg">Enviar</button>
+                                <button type="reset" class="btn btn-dark btn-lg">Apagar</button>
+                            </div>
+                        </li>
+                    </form>
+        </section>
+            
+    </main>
+
+    <!--Endereço / telefone / email da loja-->
+   
+    <div id="ctt" class="container">
+        <address>
+            <h3 class="gap-down">Fale com a gente!</h3>
+            <li class="circle"><strong>Nosso e-mail:</strong><a href="mailto: daniel_batistasj@hotmail.com" target="_blank"> MotoLife@motolife.com.br</a></li>
+            <li class="circle"><strong>Nosso telefone e WhatsApp:</strong><a type="Telefone" href="tel:+5581986050451" target="_blank"> (81) 9 8787-8989</a></li>
+            <li class="circle"><strong>Endereço: </strong><a href="https://www.google.com/maps/place/PG+Jockey+-+Postos+PG+%2B+GNV/@-8.062148,-34.9178,16z/data=!4m6!3m5!1s0x7ab193aaca873b1:0xf2e840f131c4faf9!8m2!3d-8.0621479!4d-34.9177997!16s%2Fg%2F1pt_82f3g?hl=pt-BR&entry=ttu" type="mapa" target="_blank">Avenida Abdias de Carvalho, 1883</a></li>
+        </address>
+    </div>
+    <footer class="footerImg">
+        <div class="container center">
+            <div>
+                <ul class="line">
+                    <li class="menu">
+                        <p><img src="icone-linkedin.png" alt="ícone linkedin"> <a href="https://www.linkedin.com/in/daniel-batista-b5766b250/" target="_blank">/daniel-batista-b5766b250</a></p>
+                    </li>
+                    <li class="menu">
+                        <p><img src="icone-github.png" alt="ícone github"> <a href="https://github.com/Danielzory" target="_blank">/Danielzory</a> </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
