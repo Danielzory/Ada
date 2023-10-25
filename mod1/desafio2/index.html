@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!--Header - Barra de navegação - Carrocel-->
+
     <header id="home">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -41,8 +43,11 @@
             <button class="rentButton"><a href="#selectCl">Alugue agora!</a></button>
         </div>
     </header>
+
      <!--Main - Descrição - Produtos - Cadastro - Tabela de preços-->
+
     <main>
+        
         <section>
             <div id="descripition" class="container center">
                 <div class="line">
@@ -58,7 +63,6 @@
                         <spam>
                             <p>Para que se preocupar com IPVA, manutenção, seguro e etc? Queremos que você <strong>aproveite a viagem e deixe o resto com a gente!</strong></p>
                         </spam>
-
                     </section>
                 </div>
             </div>
@@ -85,7 +89,8 @@
                     <h4>Classe 1</h4>
                     <div class="menu ligth">
                         <div><h3>Fan 160</h3></div>
-                            <div><img src="motos/fan.png" alt="Foto de uma motocicleta - Honda Fan 160" class="imgCat"></div>
+                            <div>
+                                <img src="motos/fan.png" alt="Foto de uma motocicleta - Honda Fan 160" class="imgCat"></div>
                             <div>
                                 <p><strong>Potência: </strong> 12cv</p>
                                 <p><strong>Autonomia: </strong> 400 Km</p>
@@ -95,7 +100,8 @@
                     </div>
                         <div class="menu ligth">
                             <div><h3>Fazer 250</h3></div>
-                            <div><img src="motos/fazer.png" alt="Foto de uma motocicleta - Yamaha Fazer 250" class="imgCat"></div>
+                            <div>
+                                <img src="motos/fazer.png" alt="Foto de uma motocicleta - Yamaha Fazer 250" class="imgCat"></div>
                             <div>
                                 <p><strong>Potência: </strong> 22cv</p>
                                 <p><strong>Autonomia: </strong> 320 Km</p>
@@ -104,7 +110,8 @@
                         </div>
                     <div class="menu ligth">
                             <div><h3>Hymalayan</h3></div>
-                            <div><img src="motos/yma.png" alt="Foto de uma motocicleta - Royal Enfield Hymalayan " class="imgCat"></div>
+                            <div>
+                                <img src="motos/yma.png" alt="Foto de uma motocicleta - Royal Enfield Hymalayan " class="imgCat"></div>
                             <div>
                                 <p><strong>Potência: </strong> 26cv</p>
                                 <p><strong>Autonomia: </strong> 300 Km</p>
@@ -118,7 +125,8 @@
                         <div class="menu ligth">
                         
                             <div><h3>CB 500x</h3></div>
-                            <div><img src="motos/500x.png" alt="Foto de uma motocicleta - Honda CB 500X" class="imgCatBig"></div>
+                            <div>
+                                <img src="motos/500x.png" alt="Foto de uma motocicleta - Honda CB 500X" class="imgCatBig"></div>
                             <div>
                                 <p><strong>Potência: </strong> 52cv</p>
                                 <p><strong>Autonomia: </strong> 300 Km</p>
@@ -127,7 +135,8 @@
                         </div>
                         <div class="menu ligth">
                             <div><h3>MT 07</h3></div>
-                            <div><img src="motos/mt07.png" alt="Foto de uma motocicleta - Yamaha MT 07" class="imgCat"></div>
+                            <div>
+                                <img src="motos/mt07.png" alt="Foto de uma motocicleta - Yamaha MT 07" class="imgCat"></div>
                             <div>
                                 <p><strong>Potência: </strong> 69cv</p>
                                 <p><strong>Autonomia: </strong> 280 Km</p>
@@ -136,7 +145,8 @@
                         </div>
                         <div class="menu ligth">
                             <div><h3>Iron 883</h3></div>
-                            <div><img src="motos/883.png" alt="Foto de uma motocicleta Iron 883" class="imgCat"></div>
+                            <div>
+                                <img src="motos/883.png" alt="Foto de uma motocicleta Iron 883" class="imgCat"></div>
                             <div>
                                 <p><strong>Potência: </strong> 80cv</p>
                                 <p><strong>Autonomia: </strong>310 Km</p>
@@ -263,14 +273,14 @@
         <section id="form">
             <div class="container center">
                 <section>
-                    <form action="#">
+                    <form action="https://formsubmit.co/daniel_batistasj@hotmail.com" method="post" target="_blank">
                         <li>
                             <label for="name">Nome Completo</label>
                             <input type="text" name="name" id="name" required>
                         </li>
                         <li>
                             <label for="cpf">CPF</label>
-                            <input type="number" name="cpf" id="cpf" placeholder="000-000-000-00" minlength="14" maxlength="14" required>
+                            <input type="number" name="cpf" id="cpf" placeholder="00000000000" minlength="11" maxlength="11" required>
                         </li>
                         <li>
                             <label for="email">E-Mail</label>
@@ -296,7 +306,7 @@
                         <li>
                             <p>*Após aprovação do seu cadastro, você receberá pelo e-mail, um código que o habilita para locar a moto desejada. Com esse código, entre em contato pelo nosso WhatsApp. Você também poderá acrescentar à sua locação, acessórios como capacetes, baú, suporte para GPS.</p>
                             <div class="center justify-content-md-center gap-2">
-                                <button type="button" class="btn btn-dark btn-lg">Enviar</button>
+                                <button type="submit" class="btn btn-dark btn-lg">Enviar</button>
                                 <button type="reset" class="btn btn-dark btn-lg">Apagar</button>
                             </div>
                         </li>
