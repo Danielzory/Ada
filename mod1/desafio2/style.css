@@ -22,7 +22,7 @@ body{
 }
 
 section > div{
-    background-color: var(--background);
+    background-color: rgba(255, 255, 255, 0.683);
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.441);
 }
@@ -168,10 +168,10 @@ div#carrocel{
     flex-direction: row;
     margin-bottom: 5%;
 }
-.container{
+/*.container{
     padding: 10px;
     margin: 20px 10px 10px 25px;
-}
+}*/
 .divAling{
     max-width: 90%;
 }
@@ -182,14 +182,13 @@ div#carrocel{
     max-width: 22vw;
 }    
 .gap-down{
-    margin-bottom: 10px;
+    margin-top: 15px;
 }
 .gap-left{
     margin-left: calc(50px + 10vw);   
 }
 .ligth{
     padding: 3px;
-
 }
 .ligth:hover{
     cursor: pointer;
@@ -213,10 +212,13 @@ div#carrocel{
     padding: 12px;
     box-shadow: 0px 0px 16px rgba(213, 225, 47, 0.57);
     transition: 0.5s;
-
 }
 .cl{
     padding: 20px;
+}
+
+.pd{
+    padding: 10px;
 }
 
 /*|||||||||||||||||| Classes para Imágens |||||||||||||||||||||*/
@@ -271,4 +273,19 @@ div#carrocel{
 .rentButton:hover{
     box-shadow: 0px 0px 16px rgba(39, 39, 185, 0.57);
     transition: 1s;   
+}
+
+/*|||||||||||||||||| Media query |||||||||||||||||||||*/
+
+@media screen and (max-width: 780px ) {
+   p{
+    font-size: 0.8rem;
+   }
+    ul{
+        margin-left: 18vw;
+    }
+    .wrep{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
