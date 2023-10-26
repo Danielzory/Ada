@@ -80,7 +80,7 @@ li{
 }
 
 div#descripition{
-    background-image: url('carrocel/sundown.jpg');
+    background-image: url('./medias/background/sundown.jpg');
     background-position: center center;
     background-size: cover;
     height: 50%;
@@ -241,7 +241,7 @@ div#carrocel{
     transition: 0.5s;
 }
 .footerImg{
-    background-image: url('footer.jpg.jpg');
+    background-image: url('./medias/background/footer.jpg.jpg');
     width: 100%;
     height: 200px;
     background-position: top center;
