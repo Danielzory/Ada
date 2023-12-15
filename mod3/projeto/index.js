@@ -197,8 +197,8 @@ function fazerlogin () {
         getArea.innerHTML = `<div id="apresenta">
         <h2>Bem vindo ${findConta.cliente.nome} - Conta ${findConta.conta}</h2> 
         <div id="buttons">
-        <button onclick="depositar()">Depositar</button>
-        <button onclick="sacar()">Sacar</button>
+        <button class="formButton" onclick="depositar()">Depositar</button>
+        <button class="formButton" onclick="sacar()">Sacar</button>
         </div>
         </div>`
         criarArea.innerHTML =``;
