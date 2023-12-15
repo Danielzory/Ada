@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POOBank</title>
+</head>
+<body>
+    <head>
+        <h1>POO BANK</h1>
+    </head>
+    <nav>
+        <div id="criarConta">
+            <h2>Crie Sua conta</h2>
+            <label for="nome">Nome Completo</label>
+            <input id="nome" name="nome" type="text" required>
+
+            <label for="cpf">CPF</label>
+            <input id="cpf" name="cpf" type="number" minlength="11" maxlength="11" placeholder="00000000000" required>
+
+            <label for="Senha">Crie uma senha</label>
+            <input id="senha" name="senha" type="password" minlength="4" maxlength="6">
+
+            <label for="tipoConta">Tipo de conta</label>
+            <input id="tipoConta" name="tipoConta" type="radio" value="Conta corrente">Conta Corrente</input>
+            <input id="tipoConta" name="tipoConta" type="radio" value="Conta poupança">Conta Poupança</input>  
+
+            <input type="button" value="Criar" onclick='criarConta()'>
+        </div>
+
+        <div id="login">
+            <h2>Fazer Login</h2>
+            <label for="nome">CPF</label>
+            <input id="nome" name="nome" type="text" minlength="11" placeholder="00000000000">
+
+            <label for="conta">Conta</label>
+            <input id="conta" name="conta" type="number">
+
+            <label for="cpf">Senha</label>
+            <input id="cpf" name="cpf" type="password">
+
+            <input type="button" value="Logar" onclick="fazerlogin()">
+        </div>
+        <div id="mudaPagina"></div>
+    </nav>
+    <footer></footer>
+    <script src="index.js"></script>
+    
+    
+</body>
+</html>

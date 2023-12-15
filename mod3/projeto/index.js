@@ -1,3 +1,14 @@
+//variáveis globais
+let nomeDoc = document.getElementById('nome');
+let cpfDoc = document.getElementById("cpf");
+let senhaDoc = document.getElementById("senha");
+
+let getArea = document.getElementById("mudaPagina");
+let contaDoc = document.getElementById("conta");
+let loginArea = document.getElementById("login");
+let criarArea = document.getElementById("criarConta");
+
+
 class Cliente {
     static ContaCorrente;
     static ContaPoupanca;
@@ -24,6 +35,7 @@ class Conta {
     }
     depositar(valor){
         this.#saldo += valor
+        getArea.innerHTML += `<p>${this.cliente.nome}, Você depositou R$ ${valor} reais, seu saldo atual é de R$ ${this.#saldo} Reais</p>`
         console.log(`${this.cliente.nome}, Você depositou R$ ${valor} reais, seu saldo atual é de R$ ${this.#saldo} Reais`)
     }
     sacar(valor){
@@ -32,6 +44,7 @@ class Conta {
             console.log(`${this.cliente.nome}, Você não tem saldo suficinete`)
         }else{
             this.#saldo -= valor
+            getArea.innerHTML += `<p>${this.cliente.nome}, Você sacou R$ ${valor} reais, seu saldo atual é de R$ ${this.#saldo} Reais</p>`
             console.log(`${this.cliente.nome}, Você sacou R$ ${valor} reais, seu saldo atual é de R$ ${this.#saldo} Reais`) 
         }
     }
@@ -91,140 +104,152 @@ class ContaCorrente extends Conta {
     }
 }
 
-//Variáveis Globais
+//Arrays
 let contas = [];
 let clientes = [];
-let login = false;
+
 
 //função para criar conta
 
-function criarConta (nome, cpf, senha, tipoConta)  {
+function criarConta ()  {
+    let nome = nomeDoc.value;
+    let cpf = cpfDoc.value;
+    let senha = senhaDoc.value;
+    let tipoConta = document.querySelector("input[name=tipoConta]:checked").value;
+
+    
     const cliente = new Cliente (nome, cpf, senha);
     clientes.push(cliente);
-    if(tipoConta == 'conta corrente'){
-        const conta = new ContaCorrente (1, contas.length, cliente)
+
+    console.log(tipoConta)
+
+    if(tipoConta == 'Conta corrente'){
+        const conta = new ContaCorrente (1, 100 + contas.length, cliente)
+        getArea.innerHTML += `<p>Cliente:${cliente.nome} - Conta: ${conta.conta}</p>`
         console.log(conta.mostrarSaldo())
-        return contas.push(conta)
+        console.log(cliente)
+        return contas.push(conta);
     }else{
-        const conta = new ContaPoupanca (1,contas.length, cliente)
+        const conta = new ContaPoupanca (1, 200 + contas.length, cliente)
+        getArea.innerHTML += `<p>Cliente:${cliente.nome} - Conta: ${conta.conta}</p>`
         console.log(conta.mostrarSaldo())
-        return contas.push(conta)
+        console.log(cliente.tipoConta)
+        return contas.push(conta);
     }
-}
-
-//criando contas
-
-criarConta('Luiza Mel', 147147, 147, 'conta corrente');
-criarConta('Daniel Batista', 198198, 187, 'conta corrente');
-criarConta('Miguel Dias', 147888, 882, 'conta corrente');
-criarConta('Bruce Lee', 199199, 257, 'conta poupança');
-criarConta('Leda Lee', 199888, 574, 'conta poupança');
-
-//função para login
-
-function Fazerlogin (cpf, senha) {
-    let findCliente;
-    login = false
-
-    clientes.forEach(cliente => {
-        if(cliente.cpf == cpf){
-        findCliente = cliente;
-        }
     
-    });
-
-    //login
-    if(findCliente.cpf === cpf && findCliente.senha === senha){
-        console.log(`Bem vindo(a) ${findCliente.nome}`)
-        console.log(`Login realizado com sucesso`)
-        login = true;
-    }else{
-        console.log(`CPF ou Senha inválidos`)
-    }
 }
 
-//operações
+//Opreações disponíveis
 
-function depositar (numeroConta, valor){
+function depositar (){
     let findConta;
+    let login = true;
+    let getConta = prompt('Digite o número da Conta');
+    let getValor = prompt('Digite o Valor que deseja depositar');
 
     if(login === true){
         contas.forEach(conta => {
-            if(conta.conta === numeroConta){
+            if(conta.conta == getConta){
             findConta = conta;
-            findConta.depositar(valor)
+            findConta.depositar(Number(getValor))
             }
         });
     }
 }
 
-function sacar (numeroConta, valor){
+function sacar (){
     let findConta;
+    let login = true;
+    let getConta = prompt('Digite o número da Conta');
+    let getValor = prompt('Digite o Valor que deseja depositar');
 
     if(login == true){
         contas.forEach(conta => {
-            if(conta.conta === numeroConta){
+            if(conta.conta == getConta){
                 findConta = conta;
-                findConta.sacar(valor);
+                findConta.sacar(Number(getValor));
                 return;
             }
         });
     }
 }
 
-function cobrarTaxaMnt (conta){
+//função para login
+function fazerlogin () {
     let findConta;
-    let data = new Date;
-    let diahoje = data.getDate()
-    for(let i = 0; i <= contas.length; i++){
-        if(contas[i].conta == conta ){
-            findConta = contas[i]
-            break
-        }else{
-            i++
-        }
+    let cpf = (cpfDoc.value);
+    let senha = (senhaDoc.value);
+    let numeroConta = contaDoc.value;
+    login = false
+
+    contas.forEach(conta => {
+    if(conta.conta == numeroConta){
+    findConta = conta;
     }
-    if(diahoje == 28){
-        findConta.cobrarTaxaMnt()
+    }); 
+
+    //login
+    if(findConta.cliente.cpf == cpf && findConta.cliente.senha == senha){
+        console.log(`Bem vindo(a) ${findConta.cliente.nome}`)
+        console.log(`Login realizado com sucesso`)
+        login = true;
+        
+        getArea.innerHTML = `<div id="apresenta">
+        <h2>Bem vindo ${findConta.cliente.nome} - Conta ${findConta.conta}</h2> 
+        <div id="buttons">
+        <button onclick="depositar()">Depositar</button>
+        <button onclick="sacar()">Sacar</button>
+        </div>
+        </div>`
+        criarArea.innerHTML =``;
+        loginArea.innerHTML=``;
+    }else{
+        console.log(`CPF ou Senha inválidos`)
     }
+
 }
 
-function aplicarValor (conta){
-    let findConta;
-    let data = new Date;
-    let diahoje = data.getDate()
-    for(let i = 0; i <= contas.length; i++){
-        if(contas[i].conta == conta ){
-            findConta = contas[i]
-            break
-        }else{
-            i++
-        }
-    }
-    if(diahoje == 28){
-        findConta.aplicar()
-    }
-}
-
-
-
-// Fazerlogin(147888, 882);
-
-
-// depositar(2, 300);
-// sacar(2, 100);
-
-// aplicarValor()
-// cobrarTaxaMnt()
-
-// criarConta('Luiza Mel', 147147, 147, 'conta corrente');
-// criarConta('Daniel Batista', 198198, 187, 'conta corrente');
-// criarConta('Miguel Dias', 147888, 882, 'conta corrente');
-// criarConta('Bruce Lee', 199199, 257, 'conta poupança');
-// criarConta('Leda Lee', 199888, 574, 'conta poupança');
 
 
 
 
 
+
+
+
+//operações para implementar futuramente
+
+// function cobrarTaxaMnt (conta){
+//     let findConta;
+//     let data = new Date;
+//     let diahoje = data.getDate()
+//     for(let i = 0; i <= contas.length; i++){
+//         if(contas[i].conta == conta ){
+//             findConta = contas[i]
+//             break
+//         }else{
+//             i++
+//         }
+//     }
+//     if(diahoje == 28){
+//         findConta.cobrarTaxaMnt()
+//     }
+// }
+
+// function aplicarValor (conta){
+//     let findConta;
+//     let data = new Date;
+//     let diahoje = data.getDate()
+//     for(let i = 0; i <= contas.length; i++){
+//         if(contas[i].conta == conta ){
+//             findConta = contas[i]
+//             break
+//         }else{
+//             i++
+//         }
+//     }
+//     if(diahoje == 28){
+//         findConta.aplicar()
+//     }
+// }
 
