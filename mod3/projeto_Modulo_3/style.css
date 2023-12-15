@@ -29,6 +29,10 @@ h1{
 h2{
     font-size: 25px;
 }
+div{
+    width: 70%;
+    margin: auto;
+}
 
 .center{
     display:flexbox;
