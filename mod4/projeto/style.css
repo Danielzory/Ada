@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(58, 49, 38, 0.867);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Head*/
+.head-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    text-align: center;
+}
+
+.main-title{
+    font-size: 2em;
+    font-family: 'Black Ops One', system-ui;
+    font-weight: bolder;
+    text-shadow: 0px 5px 15px rgba(103, 2, 2, 0.722);
+    color: rgba(255, 68, 0, 0.7940);
+}
+.center{
+    align-items: center;
+    text-align: center;
+}
+
+
+/*Main*/
+.load-main{
+    margin: auto;
+    margin-top: 30%;
+    color: rgba(196, 97, 10, 0.832);
+    font-family: 'Honk', system-ui;
+    font-size: 3em;
+    text-shadow: 0px 0px 15px rgba(132, 9, 9, 0.702) ;
+}
+.main-txt{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    font-family: 'Black Ops One', system-ui;
+}
+.box{
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.397);
+    border-radius: 10px 5px;
+    width: 20%;
+    height: 50%;
+    text-align: center;
+    background-color: rgba(100, 76, 76, 0.788);
+}
+
+.button-box{
+    margin: auto;
+    padding: 5px;
+    border: 1px black;
+    border-radius: 30px;
+    width: 20%;
+    height: 20%;
+    background-color:bisque ;
+}
+.button-box:hover{
+    background-color: rgba(216, 25, 25, 0.531);
+    cursor: pointer;
+}.button-box:active{
+    background-color: rgba(182, 81, 41, 0.773);
+    border:1px solid black;
+}
+
+.container{
+    display: flex;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+.form-container{
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+.numberOf{
+    font-size: 1.5em;
+    padding: 10px;
+}
+.txt-total{
+    font-size: 1.7em;
+    font-weight: bolder;
+    color: rgba(182, 81, 41, 0.773);
+}    
+
+.use-button{    
+    margin: auto;
+    margin-top: 2%;
+    width: 15%;
+    height: 25%;
+    border: 2px solid rgba(255, 68, 0, 0.794);
+    background-color: rgba(255, 68, 0, 0.7940);
+    border-radius: 15px 10px;
+    font-family: 'Black Ops One', system-ui;
+    font-size:calc(9px + 23%);
+}
+.use-button:hover{
+    border: 3px solid red;
+    color: rgba(2, 14, 0, 0.757);
+    cursor: pointer;
+}
+.use-button:active{
+    border: 2px solid orangered;
+    box-shadow: 0px 0px 15px red;
+}
+
+.cardTxt{
+    font-family: 'Lilita One', sans-serif;;
+}
+
+/*Table*/
+table{
+    border: 2px solid rgba(0, 0, 0, 0.717);
+    border-radius: 8px;
+    margin: auto;
+    padding: 5px;
+    background-color: rgba(100, 76, 76, 0.788);
+    width: 60%;
+}
+td{
+    border: 1px solid rgb(12, 3, 3);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.561);
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.606);
+}
+.main-th{
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+/*Form*/
+
+.input-form{
+    display: block;
+    margin: auto;
+    margin-bottom: 2%;
+    width: 60%;
+    height: 50px;
+    border-radius: 10px;
+}
+.txt-input{
+    background-color:rgba(255, 255, 255, 0.561);
+    text-align: center;
+}
+.space-around{
+   justify-content: space-around;
+}
+.simple-button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.simple-button:hover{
+    color: rgba(159, 10, 10, 0.834);
+    cursor: pointer;
+}
+
+.formSucess{
+    border: 1px solid green;
+    box-shadow: 0px 0px 10px green;
+}
+.formFail{
+    border: 1px solid red;
+    box-shadow: 0px 0px 10px red;
+}

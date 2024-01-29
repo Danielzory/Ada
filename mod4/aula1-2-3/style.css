@@ -1,0 +1,33 @@
+/*boa abordagem!*/
+
+:root{
+    --cor1-light: #000000; 
+    --cor2-light: #fdfdfd;
+
+    --cor1-dark: #ffffff; 
+    --cor2-dark: #181818;
+
+    .light{
+        --color1: var(--cor1-light);
+        --color2: var(--cor2-light);
+    }
+    .dark{
+        --color1: var(--cor1-dark);
+        --color2: var(--cor2-dark);
+    }
+}
+
+body{
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+.destaque{
+    border: 5px solid rgb(129, 0, 0);
+    transition: 0.2s;
+}
+.destaque-light{
+    border: 5px solid rgb(10, 10, 10);
+    transition: 0.2s;
+}
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <head>
+        <div id="theme-button"></div>
+        <h1 class="main-title head-container">Churrascômetro</h1>
+    </head>
+    <Main id="main">
+        <div id="main-msg" class="head-container">
+            <p class="main-txt">Fique por dentro de todas as novidades.</p>
+            <p class="main-txt">Cadastre seu e-mail e receba promoções especiais!</p>
+        </div>
+        <div id="form" class="form-container">
+            <input id="name" type="text" placeholder="Preencha com seu Nome" required class="input-form txt-input">
+            <input id="email" type="text" placeholder="Digite seu E-mail" required class="input-form txt-input">
+            <input id="cep" type="number" placeholder="Digite seu CEP" maxlength="8" minlength="8" class="input-form txt-input">
+            <div class="input-form">
+                <input type="checkbox" name="checkbox" id="checkbox" checked>
+                <label for="checkbox" class="main-txt">Concordo em receber comunicação e ofertas personalizadas de acordo com os meus interesses</label>
+            </div>
+        </div>
+        <div id="use-button" class="container">
+            <button id="register" class="use-button">Cadastrar</button>
+        </div>
+        <div class="container space-around">
+            <p id="back" class="simple-button">Voltar</p>
+            <p id="next" class="simple-button">Pular</p>
+        </div>
+    </Main>
+    <script src="crurrasForm.mjs"></script>
+</body>
+</html>
