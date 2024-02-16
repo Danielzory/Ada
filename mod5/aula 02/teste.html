@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>1
+        <div>2
+            <div>3
+                <div>4
+                    <div>5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="clear">clear output</button>
+    <section id="log"></section>
+
+<script>
+var logElement = document.getElementById('log');
+
+function log(msg) {
+    logElement.innerHTML += ('<p>' + msg + '</p>');
+}
+
+function capture() {
+    log('capture: ' + this.firstChild.nodeValue.trim());
+}
+
+function bubble() {
+    log('bubble: ' + this.firstChild.nodeValue.trim());
+}
+
+function clearOutput() {
+    logElement.innerHTML = "";
+}
+
+var divs = document.getElementsByTagName('div');
+for (var i = 0; i < divs.length; i++) {
+    divs[i].addEventListener('click', capture, false);
+    divs[i].addEventListener('click', bubble, true);
+}
+var clearButton = document.getElementById('clear');
+clearButton.addEventListener('click', clearOutput);
+</script>
+    
+</body>
+</html>

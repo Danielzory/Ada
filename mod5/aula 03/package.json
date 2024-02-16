@@ -1,0 +1,25 @@
+{
+  "name": "banana-app",
+  "version": "1.0.0",
+  "description": "Projeto da aula 3 de react",
+  "scripts": {
+    "banana": "echo \"Error: no Banana specified\" && exit 1",
+    "start": "esbuild src/app.jsx --bundle --outfile=app-convertido.js --servedir=./",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/app.jsx --bundle --outfile=app-convertido.js"
+  },
+  "keywords": [
+    "react",
+    "banana",
+    "aula-03"
+  ],
+  "author": "Daniel Batista",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.20.0"
+  },
+  "dependencies": {
+    "react-dom": "18.2.0",
+    "react": "18.2.0"
+  }
+}
