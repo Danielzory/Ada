@@ -1,0 +1,13 @@
+button{
+    border-radius: 0.5rem;
+}
+
+.close-button{
+    display: flex;
+    border-radius: 3rem;
+    background-color: rgba(219, 10, 2, 0.686);
+    height: 10px;
+    align-items: center;
+    margin: 0 90%;
+    transition: all 0.25s;
+}

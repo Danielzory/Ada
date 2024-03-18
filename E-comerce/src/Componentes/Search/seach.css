@@ -1,0 +1,26 @@
+.search-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 75%;
+    padding: 0px;
+    gap: 5px;
+    background-color: #149bde;
+    width: 20%;
+    height: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.721);
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+input{
+    width: 90%;
+    border-radius: 0.25rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.icone-search{
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,43 @@
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.card{
+    flex-direction: column;
+    max-width: 45%;
+    border: 2px solid rgba(0, 0, 0, 0.306);
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+}
+.card:hover{
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+}
+.cardImg{
+    margin: 0 auto;
+    max-width: 30%;
+    max-height: 30%;
+}
+
+.infoCard{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.priceContainer{
+    margin-top: 10px; 
+    border-top: 1px solid #ccc; 
+    padding-top: 10px; 
+    text-align: center; 
+    font-size: 1.2rem;
+    font-family: monospace;
+    color: #07660dd3; 
+}
+.search {
+margin: 0 auto;
+}
